@@ -1,0 +1,6 @@
+{
+  "name": "Eeshu Medical Store",
+  "description": "Your trustworthy neighborhood pharmacy in India — medicines delivered with care.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

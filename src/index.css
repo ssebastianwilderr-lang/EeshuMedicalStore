@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-mint-white: #F6FAF7;
+  --color-teal-brand: #0E4D44;
+  --color-marigold: #E8A33D;
+  --color-sage: #BFE3D3;
+  --color-whatsapp: #25D366;
+}
+
+/* Custom prescription notepad torn edge style */
+.torn-edge {
+  position: relative;
+}
+
+.torn-edge::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background-size: 12px 6px;
+  background-image: radial-gradient(circle at 6px 0, transparent 4px, #ffffff 4px);
+}
+
+.torn-edge-top {
+  position: relative;
+}
+
+.torn-edge-top::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background-size: 12px 6px;
+  background-image: radial-gradient(circle at 6px 6px, transparent 4px, #ffffff 4px);
+}
+
+/* Custom prescription grid watermark background */
+.prescription-grid {
+  background-color: #ffffff;
+  background-image: linear-gradient(rgba(14, 77, 68, 0.04) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(14, 77, 68, 0.04) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
