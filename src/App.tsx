@@ -19,6 +19,7 @@ import { BlisterPackDivider } from './components/BlisterPackDivider';
 import { ReviewCarousel } from './components/ReviewCarousel';
 import { OrderModal } from './components/OrderModal';
 import { motion } from 'motion/react';
+import twoMedicinesImg from './assets/images/two_medicines_1784095960942.jpg';
 
 // Real-world store details
 const STORE_DATA = {
@@ -130,7 +131,7 @@ export default function App() {
             <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-64 md:h-64 lg:w-80 lg:h-80 shrink-0 relative self-start md:self-auto mt-4 md:mt-0">
               <div className="relative w-full h-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-md border-2 sm:border-4 border-white bg-white group hover:scale-[1.02] transition-transform duration-500">
                 <img
-                  src="/src/assets/images/two_medicines_1784095960942.jpg"
+                  src={twoMedicinesImg}
                   alt="Medicines at Eeshu Medical Store"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
